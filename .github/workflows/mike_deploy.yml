@@ -1,7 +1,9 @@
 name: Publish documentation on GitHub pages
 
 on:
-  pr:
+  pull_request:
+    types:
+      - opened
     branches:
       - main
 
